@@ -1,61 +1,79 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
+/* Global Styles */
 body {
-    background-color: cadetblue;
-    display: flexbox;
-}
-
-header {
-    display: flexbox;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .logo img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  nav ul {
     list-style: none;
-    justify-content: flex-start;
-    padding: 40;
-    align-items:center
-
-
-}
-
-#portfolio {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: left;
-    display: inline-flex;
-    
-
-}
-
-.header nav {
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-
-}
-
-#works {
-    display: flex;
-    flex-direction: row;
-
-
-}
-
-
-
-
-
-
-.headerssection {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 60px;
-    padding: 30;
-}
-
-.paras {
-    display: flex;
-    border-style: solid;
-    border-color: purple 5px;
-    margin: 40px;
-}
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* About Section Styles */
+  #about {
+    padding: 50px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  /* Work Section Styles */
+  #work {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .gallery a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .gallery h3 {
+    margin-top: 10px;
